@@ -1,0 +1,169 @@
+/*Use standard box model where padding is part of the content*/
+div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+div.baseline {
+	clear: both;
+	margin-left: 5px;
+}
+img {
+	vertical-align: middle;
+}
+
+/*Google maps stuff*/
+#map {
+	height: 100%;
+	width: 100%;
+	/*padding-top: 10px;*/
+	/*width: 50%;*/
+	/*margin: 25px, 10px, 10px, 10px;*/
+}
+.controls {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	box-sizing: border-box;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	height: 29px;
+	margin-left: 17px;
+	margin-top: 10px;
+	outline: none;
+	padding: 0 11px 0 13px;
+	text-overflow: ellipsis;
+	width: 400px;
+}
+.controls:focus {
+	border-color: #4d90fe;
+}
+.title {
+	font-weight: bold;
+}
+#infowindow-content {
+	display: none;
+}
+#map #infowindow-content {
+	display: inline;
+}
+
+.cluster-map {
+	background-color : #222222;
+	height : 100%;
+	width : 100%;
+}
+
+/* <Table> formatting*/
+table {
+	border-collapse: collapse;
+}
+tr.green, tr.green a {
+	color: rgb(0, 97, 0);
+	background-color: rgb(198, 239, 206);
+}
+tr.yellow, tr.yellow a {
+	color: rgb(156, 101, 0);
+	background-color: rgb(255, 235, 156);
+}
+tr.red, tr.red a {
+	color: rgb(156, 0, 6);
+	background-color: rgb(255, 199, 206);
+}
+td.numeric {
+	text-align: right;
+	padding-right: 5px;
+}
+tr.selected_row {
+	filter: brightness(85%);
+	border: 1px;
+}
+table p {
+	margin: 0;
+	padding: 0;
+}
+
+/*Layout */
+.column {
+	float: left;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.form {
+	width: 40%;
+	overflow: hidden;
+}
+div.full_map {
+	float: left;
+	height: 100%;
+	width: 60%;
+	padding: 10px;
+}
+
+/*picturers*/
+div.picture {
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+}
+
+/*sort options*/
+.sortable, .connectedSortable { 
+	border: 1px solid #eee;
+	list-style-type: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 250px; 
+}
+.connectedSortable {
+	min-height: 20px;
+	float: left;
+}
+.sortable li, .connectedSortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1em; height: 14px; }
+.sortable li span, .connectedSortable li span { position: absolute; margin-left: -1.3em; }
+.sortable li label, .connectedSortable li label {
+	display: inline-block;
+	vertical-align: baseline;
+	width: 125px;
+}
+div#sort_options, div#filter {
+	clear: both;
+}
+
+/* <form> stuff*/
+div.form_input label {
+	clear: left;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	width: 125px;
+}
+div.form_input input {
+	display: inline-block;
+	float: left;
+}
+
+div.form_text {
+	clear: both;
+}
+
+select.msdropdown {
+	display: inline-block;
+	float: left;
+	width: 300px;
+}
+input {
+	margin: 1px 2px 1px 2px;
+}
+.select2 {
+	width: 400px;
+}
